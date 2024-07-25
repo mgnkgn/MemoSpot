@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1081C1162C52E4EA00321047 /* MemoSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1152C52E4EA00321047 /* MemoSpotApp.swift */; };
+		1081C1182C52E4EA00321047 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1172C52E4EA00321047 /* ContentView.swift */; };
+		1081C11A2C52E4EA00321047 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1192C52E4EA00321047 /* Memo.swift */; };
+		1081C11C2C52E4EC00321047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1081C11B2C52E4EC00321047 /* Assets.xcassets */; };
+		1081C11F2C52E4EC00321047 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1081C11E2C52E4EC00321047 /* Preview Assets.xcassets */; };
+		1081C1262C53113000321047 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1252C53113000321047 /* WelcomeScreen.swift */; };
+		1081C1282C53143200321047 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1272C53143200321047 /* Shapes.swift */; };
+		1081C12A2C53152600321047 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081C1292C53152600321047 /* Extensions.swift */; };
+		10F321902C6116D700D6A612 /* CalendarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3218F2C6116D700D6A612 /* CalendarChart.swift */; };
+		10F952742C5631AC0057DF5D /* MemosTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F952732C5631AC0057DF5D /* MemosTabView.swift */; };
+		10F9527A2C5636590057DF5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F952792C5636590057DF5D /* HomeView.swift */; };
+		10F9527C2C563A530057DF5D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9527B2C563A530057DF5D /* ChartView.swift */; };
+		10F9527E2C563AC20057DF5D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9527D2C563AC20057DF5D /* GalleryView.swift */; };
+		10F952802C563AFE0057DF5D /* MemosMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F9527F2C563AFE0057DF5D /* MemosMapView.swift */; };
+		10F952832C5640980057DF5D /* MemoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F952822C5640980057DF5D /* MemoDetailsView.swift */; };
+		10F952862C56E6820057DF5D /* AddMemoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F952852C56E6820057DF5D /* AddMemoForm.swift */; };
+		10F952892C56F4BA0057DF5D /* LocationPicker in Frameworks */ = {isa = PBXBuildFile; productRef = 10F952882C56F4BA0057DF5D /* LocationPicker */; };
+		10FF7B782C5CF8B400BAC0E4 /* MemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF7B772C5CF8B400BAC0E4 /* MemoRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1081C1122C52E4EA00321047 /* MemoSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1081C1152C52E4EA00321047 /* MemoSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoSpotApp.swift; sourceTree = "<group>"; };
+		1081C1172C52E4EA00321047 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1081C1192C52E4EA00321047 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		1081C11B2C52E4EC00321047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1081C11E2C52E4EC00321047 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1081C1252C53113000321047 /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		1081C1272C53143200321047 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		1081C1292C53152600321047 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		10F3218F2C6116D700D6A612 /* CalendarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarChart.swift; sourceTree = "<group>"; };
+		10F952732C5631AC0057DF5D /* MemosTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosTabView.swift; sourceTree = "<group>"; };
+		10F952792C5636590057DF5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		10F9527B2C563A530057DF5D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		10F9527D2C563AC20057DF5D /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		10F9527F2C563AFE0057DF5D /* MemosMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemosMapView.swift; sourceTree = "<group>"; };
+		10F952822C5640980057DF5D /* MemoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDetailsView.swift; sourceTree = "<group>"; };
+		10F952852C56E6820057DF5D /* AddMemoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoForm.swift; sourceTree = "<group>"; };
+		10F9528A2C57000B0057DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		10FF7B772C5CF8B400BAC0E4 /* MemoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1081C10F2C52E4EA00321047 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F952892C56F4BA0057DF5D /* LocationPicker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1081C1092C52E4EA00321047 = {
+			isa = PBXGroup;
+			children = (
+				1081C1142C52E4EA00321047 /* MemoSpot */,
+				1081C1132C52E4EA00321047 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1081C1132C52E4EA00321047 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1081C1122C52E4EA00321047 /* MemoSpot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1081C1142C52E4EA00321047 /* MemoSpot */ = {
+			isa = PBXGroup;
+			children = (
+				10F9528A2C57000B0057DF5D /* Info.plist */,
+				10F952842C56E6710057DF5D /* Forms */,
+				10F952812C5640830057DF5D /* MemoDetails */,
+				1081C12B2C53A43D00321047 /* Screens */,
+				1081C1152C52E4EA00321047 /* MemoSpotApp.swift */,
+				1081C1172C52E4EA00321047 /* ContentView.swift */,
+				1081C1192C52E4EA00321047 /* Memo.swift */,
+				1081C11B2C52E4EC00321047 /* Assets.xcassets */,
+				1081C11D2C52E4EC00321047 /* Preview Content */,
+				1081C1292C53152600321047 /* Extensions.swift */,
+				1081C1272C53143200321047 /* Shapes.swift */,
+			);
+			path = MemoSpot;
+			sourceTree = "<group>";
+		};
+		1081C11D2C52E4EC00321047 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1081C11E2C52E4EC00321047 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1081C12B2C53A43D00321047 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				10F952782C5636030057DF5D /* Map */,
+				10F952772C5635F70057DF5D /* Gallery */,
+				10F952762C5635F10057DF5D /* Analysis */,
+				10F952752C5635EB0057DF5D /* HomeView */,
+				1081C1252C53113000321047 /* WelcomeScreen.swift */,
+				10F952732C5631AC0057DF5D /* MemosTabView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		10F3218E2C61168C00D6A612 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				10F3218F2C6116D700D6A612 /* CalendarChart.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		10F952752C5635EB0057DF5D /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				10FF7B762C5CF89700BAC0E4 /* MemoRow */,
+				10F952792C5636590057DF5D /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		10F952762C5635F10057DF5D /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				10F3218E2C61168C00D6A612 /* Graphs */,
+				10F9527B2C563A530057DF5D /* ChartView.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		10F952772C5635F70057DF5D /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				10F9527D2C563AC20057DF5D /* GalleryView.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		10F952782C5636030057DF5D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				10F9527F2C563AFE0057DF5D /* MemosMapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		10F952812C5640830057DF5D /* MemoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				10F952822C5640980057DF5D /* MemoDetailsView.swift */,
+			);
+			path = MemoDetails;
+			sourceTree = "<group>";
+		};
+		10F952842C56E6710057DF5D /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				10F952852C56E6820057DF5D /* AddMemoForm.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		10FF7B762C5CF89700BAC0E4 /* MemoRow */ = {
+			isa = PBXGroup;
+			children = (
+				10FF7B772C5CF8B400BAC0E4 /* MemoRow.swift */,
+			);
+			path = MemoRow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1081C1112C52E4EA00321047 /* MemoSpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1081C1222C52E4EC00321047 /* Build configuration list for PBXNativeTarget "MemoSpot" */;
+			buildPhases = (
+				1081C10E2C52E4EA00321047 /* Sources */,
+				1081C10F2C52E4EA00321047 /* Frameworks */,
+				1081C1102C52E4EA00321047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoSpot;
+			packageProductDependencies = (
+				10F952882C56F4BA0057DF5D /* LocationPicker */,
+			);
+			productName = MemoSpot;
+			productReference = 1081C1122C52E4EA00321047 /* MemoSpot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1081C10A2C52E4EA00321047 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1081C1112C52E4EA00321047 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1081C10D2C52E4EA00321047 /* Build configuration list for PBXProject "MemoSpot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1081C1092C52E4EA00321047;
+			packageReferences = (
+				10F952872C56F4BA0057DF5D /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */,
+			);
+			productRefGroup = 1081C1132C52E4EA00321047 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1081C1112C52E4EA00321047 /* MemoSpot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1081C1102C52E4EA00321047 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1081C11F2C52E4EC00321047 /* Preview Assets.xcassets in Resources */,
+				1081C11C2C52E4EC00321047 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1081C10E2C52E4EA00321047 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1081C1182C52E4EA00321047 /* ContentView.swift in Sources */,
+				1081C12A2C53152600321047 /* Extensions.swift in Sources */,
+				10FF7B782C5CF8B400BAC0E4 /* MemoRow.swift in Sources */,
+				1081C11A2C52E4EA00321047 /* Memo.swift in Sources */,
+				1081C1282C53143200321047 /* Shapes.swift in Sources */,
+				10F321902C6116D700D6A612 /* CalendarChart.swift in Sources */,
+				1081C1262C53113000321047 /* WelcomeScreen.swift in Sources */,
+				10F9527A2C5636590057DF5D /* HomeView.swift in Sources */,
+				1081C1162C52E4EA00321047 /* MemoSpotApp.swift in Sources */,
+				10F952862C56E6820057DF5D /* AddMemoForm.swift in Sources */,
+				10F952742C5631AC0057DF5D /* MemosTabView.swift in Sources */,
+				10F9527C2C563A530057DF5D /* ChartView.swift in Sources */,
+				10F9527E2C563AC20057DF5D /* GalleryView.swift in Sources */,
+				10F952802C563AFE0057DF5D /* MemosMapView.swift in Sources */,
+				10F952832C5640980057DF5D /* MemoDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1081C1202C52E4EC00321047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1081C1212C52E4EC00321047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1081C1232C52E4EC00321047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoSpot/Preview Content\"";
+				DEVELOPMENT_TEAM = 52H32YPBGS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemoSpot/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoSpot;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app requires location access for acquiring correct memo locations.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to the photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mga.MemoSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1081C1242C52E4EC00321047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MemoSpot/Preview Content\"";
+				DEVELOPMENT_TEAM = 52H32YPBGS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MemoSpot/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MemoSpot;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app requires location access for acquiring correct memo locations.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "This app requires access to the photo library.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.mga.MemoSpot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1081C10D2C52E4EA00321047 /* Build configuration list for PBXProject "MemoSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1081C1202C52E4EC00321047 /* Debug */,
+				1081C1212C52E4EC00321047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1081C1222C52E4EC00321047 /* Build configuration list for PBXNativeTarget "MemoSpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1081C1232C52E4EC00321047 /* Debug */,
+				1081C1242C52E4EC00321047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10F952872C56F4BA0057DF5D /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alessiorubicini/LocationPickerForSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10F952882C56F4BA0057DF5D /* LocationPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 10F952872C56F4BA0057DF5D /* XCRemoteSwiftPackageReference "LocationPickerForSwiftUI" */;
+			productName = LocationPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1081C10A2C52E4EA00321047 /* Project object */;
+}
