@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 26.07.2024.
 //

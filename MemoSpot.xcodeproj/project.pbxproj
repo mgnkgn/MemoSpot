@@ -27,6 +27,19 @@
 		10FF7B782C5CF8B400BAC0E4 /* MemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF7B772C5CF8B400BAC0E4 /* MemoRow.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		941BC7C82C9374A300438172 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1081C1122C52E4EA00321047 /* MemoSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1081C1152C52E4EA00321047 /* MemoSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoSpotApp.swift; sourceTree = "<group>"; };
@@ -47,6 +60,10 @@
 		10F952852C56E6820057DF5D /* AddMemoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoForm.swift; sourceTree = "<group>"; };
 		10F9528A2C57000B0057DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		10FF7B772C5CF8B400BAC0E4 /* MemoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRow.swift; sourceTree = "<group>"; };
+		941BC7B92C9374A200438172 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		941BC7BC2C9374A300438172 /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
+		941BC7BF2C9374A300438172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		941BC7C12C9374A300438172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				1081C1142C52E4EA00321047 /* MemoSpot */,
+				941BC7BB2C9374A300438172 /* Memospot */,
+				941BC7B82C9374A200438172 /* Frameworks */,
 				1081C1132C52E4EA00321047 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,6 +201,24 @@
 			path = MemoRow;
 			sourceTree = "<group>";
 		};
+		941BC7B82C9374A200438172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				941BC7B92C9374A200438172 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		941BC7BB2C9374A300438172 /* Memospot */ = {
+			isa = PBXGroup;
+			children = (
+				941BC7BC2C9374A300438172 /* AccountAuthenticationModificationViewController.swift */,
+				941BC7BE2C9374A300438172 /* MainInterface.storyboard */,
+				941BC7C12C9374A300438172 /* Info.plist */,
+			);
+			path = Memospot;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,6 +229,7 @@
 				1081C10E2C52E4EA00321047 /* Sources */,
 				1081C10F2C52E4EA00321047 /* Frameworks */,
 				1081C1102C52E4EA00321047 /* Resources */,
+				941BC7C82C9374A300438172 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -277,6 +315,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		941BC7BE2C9374A300438172 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				941BC7BF2C9374A300438172 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1081C1202C52E4EC00321047 /* Debug */ = {
@@ -401,8 +450,10 @@
 		1081C1232C52E4EC00321047 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoSpot/Preview Content\"";
@@ -423,8 +474,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.mga.MemoSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,8 +485,10 @@
 		1081C1242C52E4EC00321047 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoSpot/Preview Content\"";
@@ -456,8 +509,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.mga.MemoSpot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

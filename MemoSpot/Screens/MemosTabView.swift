@@ -1,6 +1,6 @@
 //
 //  MemosTabView.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 28.07.2024.
 //

@@ -1,6 +1,6 @@
 //
 //  CalendarChart.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 5.08.2024.
 //

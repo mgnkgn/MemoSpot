@@ -1,6 +1,6 @@
 //
 //  Item.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 25.07.2024.
 //

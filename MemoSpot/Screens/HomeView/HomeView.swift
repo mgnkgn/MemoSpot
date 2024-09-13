@@ -1,6 +1,6 @@
 //
 //  HomeView.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 28.07.2024.
 //
@@ -114,8 +114,8 @@ struct SearchBar: View {
 struct MemosListView: View {
     
     @Environment(\.modelContext) private var modelContext
-//    @Query(sort: \Memo.timestamp) var memos: [Memo]
-    var memos = MockData.sampleMemos
+    @Query(sort: \Memo.timestamp) var memos: [Memo]
+//    var memos = MockData.sampleMemos
     
     
     var searchText: String

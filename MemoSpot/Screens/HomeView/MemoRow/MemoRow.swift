@@ -1,6 +1,6 @@
 //
 //  MemoRow.swift
-//  MemoSpot
+//  MemoSpotter
 //
 //  Created by Mehmet Güneş Akgün on 2.08.2024.
 //
