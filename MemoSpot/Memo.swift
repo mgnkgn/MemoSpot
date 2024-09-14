@@ -67,7 +67,6 @@ final class Memo {
         let location = CLLocation(latitude: latitude, longitude: longitude)
         geoCoder.reverseGeocodeLocation(location) { placemarks, error in
             if let error = error {
-                print("Reverse geocode failed: \(error.localizedDescription)")
                 completion(nil)
                 return
             }

@@ -19,8 +19,7 @@ struct AddMemoForm: View {
         \.modelContext
     ) private var modelContext
     
-    @EnvironmentObject var adManager: InterstitialAdsManager
-    
+
     @State var memoTitle: String = ""
     @State var memoSummary: String = ""
     @State var memoDate: Date = .now
@@ -298,9 +297,6 @@ struct AddMemoForm: View {
                 placemarks,
                 error in
                 if let error = error {
-                    print(
-                        "Geocoding error: \(error)"
-                    )
                     self.memoCity = "N/A"
                     self.memoCountry = "N/A"
                     self.errorMessage = "Failed to retrieve location information. Please try again."
@@ -359,7 +355,10 @@ struct AddMemoForm: View {
             try modelContext.save()
             addFormShown = false
             resetStates()
-            adManager.displayInterstitialAd()
+            
+            // Show add
+//            Interstitial.shared.showInterstitialAds()
+//            adManager.displayInterstitialAd()
         } catch  {
             // if saving to the model fails, show an error
             self.errorMessage = "Failed to save memo. Please try again."

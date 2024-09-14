@@ -9,12 +9,10 @@ import SwiftUI
 
 struct MemoDetailsView: View {
     var memo: Memo = MockData.sampleMemo
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        
-        
-        
         VStack{
-            
             VStack{
                 ZStack{
                     if let city = memo.city, city != "N/A"{
@@ -81,9 +79,16 @@ struct MemoDetailsView: View {
             }
             Spacer()
         }
-        
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Gradient(colors: [Color.cyan, Color.wooden]))
+        .gesture(
+            DragGesture()
+                .onEnded{ value in
+                    if value.translation.width > 100 {
+                        dismiss()
+                    }
+                }
+        )
     
         
         

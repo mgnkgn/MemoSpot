@@ -13,9 +13,6 @@ struct HomeView: View {
     @State var addFormShown: Bool = false
     @State var searchText: String = ""
     
-    
-    
-    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -25,7 +22,7 @@ struct HomeView: View {
                 VStack {
                     // Header HStack
                     HStack {
-                        Image("memo-spot")
+                        Image("memo-spotter")
                             .resizable()
                             .frame(width: 100, height: 100)
                             .clipShape(Circle())
@@ -46,7 +43,9 @@ struct HomeView: View {
                                 .foregroundStyle(.wood)
                                 .shadow(radius: 10)
                         })
-                        .sheet(isPresented: $addFormShown, content: {
+                        .sheet(isPresented: $addFormShown, onDismiss: {
+                            Interstitial.shared.showInterstitialAds()
+                        }, content: {
                             AddMemoForm(addFormShown: $addFormShown)
                         })
                     }
@@ -84,7 +83,6 @@ struct SearchBar: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .opacity(0.4)
                     .padding()
-                    .foregroundStyle(.black)
                     .bold()
                 Button(action: {
                     withAnimation {
@@ -115,9 +113,7 @@ struct MemosListView: View {
     
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Memo.timestamp) var memos: [Memo]
-//    var memos = MockData.sampleMemos
-    
-    
+        
     var searchText: String
     
     var filteredMemos: [Memo] {
@@ -162,7 +158,6 @@ struct MemosListView: View {
     }
     
     private func deleteItem(_ memo: Memo) {
-        print("received memo: ", memo)
         withAnimation {
             if let index = memos.firstIndex(where: { $0.id == memo.id }) {
                 modelContext.delete(memos[index])
