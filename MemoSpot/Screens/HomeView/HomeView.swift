@@ -28,7 +28,7 @@ struct HomeView: View {
                             .clipShape(Circle())
                             .aspectRatio(contentMode: .fit)
                             .shadow(radius: 5)
-                        Text("MemoSpot")
+                        Text("MemoSpotter")
                             .font(.largeTitle)
                             .fontWeight(.semibold)
                             .shadow(radius: 7)
