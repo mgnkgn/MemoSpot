@@ -356,9 +356,6 @@ struct AddMemoForm: View {
             addFormShown = false
             resetStates()
             
-            // Show add
-//            Interstitial.shared.showInterstitialAds()
-//            adManager.displayInterstitialAd()
         } catch  {
             // if saving to the model fails, show an error
             self.errorMessage = "Failed to save memo. Please try again."

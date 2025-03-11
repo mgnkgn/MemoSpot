@@ -84,10 +84,6 @@ struct HomeView: View {
 							})
 						.sheet(
 							isPresented: $addFormShown,
-							onDismiss: {
-								Interstitial.shared
-									.showInterstitialAds()
-							},
 							content: {
 								AddMemoForm(
 									addFormShown: $addFormShown
